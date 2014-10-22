@@ -2,7 +2,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+body {
+  background: radial-gradient(circle, #fff, #333);
 
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -56,11 +59,15 @@ body {
     font-size: 21px;
     padding: 14px 24px;
   }
+  .btn:hover {
+   -moz-box-shadow:    inset 0 0 10px #333;
+   box-shadow:         inset 0 0 5px #333;
+  }
 }
 
 /* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
+  margin: 40px auto;
   p + h4 {
     margin-top: 28px;
   }
@@ -88,5 +95,32 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+   -moz-box-shadow:    inset 0 0 10px #333;
+   box-shadow:         inset 0 0 10px #333;
+   h1 {
+      text-shadow: 5px 0 5px #FF0000;
+   }
   }
+}
+.header ul li a {
+  color: #fff;
+}
+.header ul li a:hover {
+  color: #222;
+   -moz-box-shadow: 0 0 4px #555;
+   box-shadow: 0 0 4px #555;
+}
+.text-muted {
+  color: #333;
+}
+.s {
+    width: 50%;
+    margin-left: 25%;
+    line-height: 2em;
+    h4 {
+    padding:10px, 0;
+    text-align: center;
+    font-weight: bold;
+    }
+
 }
